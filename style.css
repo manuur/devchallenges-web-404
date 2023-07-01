@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Space Mono";
+  background-color: #fff;
+}
+
+.background {
+  min-width: 100vw;
+  min-height: 100vh;
+  opacity: 0.8;
+  z-index: -1;
+  position: fixed;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  align-self: flex-start;
+  margin-left: 2rem;
+}
+
+header p {
+  color: #333;
+  font-size: 1.5rem;
+  font-family: "Inconsolata";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+img {
+  width: 540px;
+  max-width: 40vw;
+  margin: 0 auto;
+}
+
+section div {
+  width: 50vw;
+}
+
+h1 {
+  color: #333;
+  font-size: 4rem;
+  font-family: "Space Mono";
+  font-weight: 700;
+}
+
+section div p {
+  font-size: 1.5rem;
+  font-family: "Space Mono";
+  width: 60%;
+}
+
+button {
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: "Space Mono";
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background-color: #333;
+}
+
+footer p {
+  color: #bdbdbd !important;
+  font-size: 0.875rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+footer p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  section {
+    flex-direction: column;
+  }
+
+  section div {
+    width: auto;
+    padding: 1rem;
+  }
+
+  section div h1 {
+    font-size: 3rem;
+  }
+
+  section div p {
+    width: auto;
+  }
+
+  button {
+    margin: 2rem auto
+  }
+
+  img {
+    max-width: 60vw;
+  }
+}
